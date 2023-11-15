@@ -1,0 +1,7 @@
+C:\Projects\MatrixSolution\MatrixSolution\bin\Debug\MatrixSolution.exe.config
+C:\Projects\MatrixSolution\MatrixSolution\bin\Debug\MatrixSolution.exe
+C:\Projects\MatrixSolution\MatrixSolution\bin\Debug\MatrixSolution.pdb
+C:\Projects\MatrixSolution\MatrixSolution\obj\Debug\MatrixSolution.csproj.AssemblyReference.cache
+C:\Projects\MatrixSolution\MatrixSolution\obj\Debug\MatrixSolution.csproj.CoreCompileInputs.cache
+C:\Projects\MatrixSolution\MatrixSolution\obj\Debug\MatrixSolution.exe
+C:\Projects\MatrixSolution\MatrixSolution\obj\Debug\MatrixSolution.pdb
