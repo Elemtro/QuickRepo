@@ -57,5 +57,24 @@ namespace MatrixSolution
             }
             Values = newOne.Values;
         }
+        public static Matrix operator +(Matrix a, Matrix b)
+        {
+            if (a.Rows != b.Rows || a.Columns != b.Columns)
+            {
+                Console.WriteLine("Matrixes should have same size (Rows and Columns)");
+                return new Matrix();
+            }
+            else
+            {
+                for (int i = 0; i < a.Rows; i++)
+                {
+                    for (int j = 0; j < a.Columns; j++)
+                    {
+                        a.Values[i][j] += b.Values[i][j];
+                    }
+                }
+            }
+            return a;
+        }
     }
 }

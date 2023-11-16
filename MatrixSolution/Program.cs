@@ -11,7 +11,7 @@ namespace MatrixSolution
     {
         static void Main(string[] args)
         {
-            string path = "C:\\Projects\\MatrixSolution\\Files\\matrix.txt";
+            string path = "C:\\Users\\alykhvar\\Source\\Repos\\QuickRepo\\Files\\matrix.txt";
             Matrix matrix = new Matrix(path);
             foreach (var meow in matrix.Values)
             {
@@ -21,10 +21,23 @@ namespace MatrixSolution
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine(matrix.Rows);
-            Console.WriteLine(matrix.Columns);
+            Console.WriteLine();
+
             matrix.Transpose();
             foreach (var meow in matrix.Values)
+            {
+                foreach (var v in meow)
+                {
+                    Console.Write(v + "  ");
+                }
+                Console.WriteLine();
+            }
+
+            string path2 = "C:\\Users\\alykhvar\\Source\\Repos\\QuickRepo\\Files\\matrix2.txt";
+            Matrix matrix2 = new Matrix(path2);
+            Matrix summ = matrix + matrix2;
+            Console.WriteLine();
+            foreach (var meow in summ.Values)
             {
                 foreach (var v in meow)
                 {
