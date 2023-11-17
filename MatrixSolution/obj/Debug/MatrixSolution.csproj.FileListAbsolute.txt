@@ -12,3 +12,10 @@ C:\Users\alykhvar\Source\Repos\QuickRepo\MatrixSolution\obj\Debug\MatrixSolution
 C:\Users\alykhvar\Source\Repos\QuickRepo\MatrixSolution\obj\Debug\MatrixSolution.csproj.CoreCompileInputs.cache
 C:\Users\alykhvar\Source\Repos\QuickRepo\MatrixSolution\obj\Debug\MatrixSolution.exe
 C:\Users\alykhvar\Source\Repos\QuickRepo\MatrixSolution\obj\Debug\MatrixSolution.pdb
+C:\Projects\MatrixSolution2\MatrixSolution\obj\Debug\MatrixSolution.csproj.AssemblyReference.cache
+C:\Projects\MatrixSolution2\MatrixSolution\obj\Debug\MatrixSolution.csproj.CoreCompileInputs.cache
+C:\Projects\MatrixSolution2\MatrixSolution\obj\Debug\MatrixSolution.exe
+C:\Projects\MatrixSolution2\MatrixSolution\obj\Debug\MatrixSolution.pdb
+C:\Projects\MatrixSolution2\MatrixSolution\bin\Debug\MatrixSolution.exe.config
+C:\Projects\MatrixSolution2\MatrixSolution\bin\Debug\MatrixSolution.exe
+C:\Projects\MatrixSolution2\MatrixSolution\bin\Debug\MatrixSolution.pdb

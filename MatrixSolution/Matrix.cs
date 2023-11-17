@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Versioning;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Markup;
 
 namespace MatrixSolution
 {
@@ -59,22 +61,53 @@ namespace MatrixSolution
         }
         public static Matrix operator +(Matrix a, Matrix b)
         {
+            Matrix result = new Matrix();
             if (a.Rows != b.Rows || a.Columns != b.Columns)
             {
-                Console.WriteLine("Matrixes should have same size (Rows and Columns)");
+                Console.WriteLine("ERROR! Matrixes should have same size (Rows and Columns)");
                 return new Matrix();
             }
             else
             {
                 for (int i = 0; i < a.Rows; i++)
                 {
+                    List<double> val = new List<double>();
                     for (int j = 0; j < a.Columns; j++)
                     {
-                        a.Values[i][j] += b.Values[i][j];
+                        double meow = a.Values[i][j] + b.Values[i][j];
+                        val.Add(meow);
                     }
+                    result.Values.Add(val);
                 }
             }
-            return a;
+            return result;
+        }
+        public static Matrix operator *(Matrix a, Matrix b)
+        {
+            if (a.Columns != b.Rows)
+            {
+                Console.WriteLine("ERROR! Matrixes can't be multiplicated!");
+                return new Matrix();
+            }
+            else
+            {
+                Matrix result = new Matrix();
+                for (int l = 0; l < a.Rows; l++)
+                {
+                    List<double> values = new List<double>();
+                    for (int i = 0; i <  b.Columns; i++)
+                    {
+                        double number = 0;
+                        for (int j = 0; j < a.Columns; j++)
+                        {
+                            number += a.Values[l][j] * b.Values[j][i];
+                        }
+                        values.Add(number);
+                    }
+                    result.Values.Add(values);
+                }
+                return result;
+            }
         }
     }
 }
